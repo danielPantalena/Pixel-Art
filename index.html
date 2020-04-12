@@ -4,27 +4,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paleta de Cores</title>
+  <title>Pixel Art</title>
   <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-  <header>
+  <header id='header'>
     <h1 id="title">Pixel Art</h1>
+
+
     <div>
-      <button onclick="apearBlock('size-inputs')">Resize the board</button>
-      <button onclick="apearBlock('color-inputs')">Select your colors</button>
+      <button id="clear-board" style="color: blueviolet; height: 30px; font-weight: bolder; cursor: pointer;">clear
+        board</button>
     </div>
+    <div>
+      <button onclick="appearBlock('color-inputs')" style="color: blueviolet; height: 30px; font-weight: bolder; cursor: pointer;
+      ">select colors</button>
+    </div>
+    <div id='size-inputs'>
+      <form style="border: 1px solid white;">
+        <label for="pixel-size">pixel's size:</label>
+        <input type="number" id="pixel-size" min="5" max="40" placeholder="pixel size">
+        <label for="board-size">board's size:</label>
+        <input type="number" id="board-size" min="5" max="100" placeholder="board size">
+      </form>
+    </div>
+
   </header>
-  <div class='settings' id='size-inputs' style="display: none;">
-    <form>
-      <label for="pixel-size">Select a size for pixels:</label>
-      <input type="number" id="pixel-size" min="10" max="40" placeholder="pixel size">
-      <label for="board-size">Select a size for board:</label>
-      <input type="number" id="board-size" min="5" max="100" placeholder="board size">
-    </form>
-  </div>
+  <button onclick="appearBlock('header')" style="color: blueviolet; height: 30px; font-weight: bolder; cursor: pointer;"
+  >hide/appear header</button>
+
   <div id="color-inputs" class="settings" style="display: none;">
     <input type="color" class="color-input" id="input1">
     <input type="color" class="color-input" id="input2">
@@ -38,6 +48,7 @@
     <input type="color" class="color-input" id="input10">
     <input type="color" class="color-input" id="input11">
     <input type="color" class="color-input" id="input12">
+    <button style="margin-left: 20%; height: 20%;" onclick="appearBlock('color-inputs')">X</button>
   </div>
 
   <div id="buttons">
@@ -58,7 +69,6 @@
 
   <div id="pixel-board" class="pixel-board"></div>
 
-  <button id="clear-board">clear</button>
 
   <script src="script.js"></script>
 

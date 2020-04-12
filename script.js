@@ -51,9 +51,8 @@ colorToButton();
 for (let input of inputsArray) {
   input.addEventListener('input', colorToButton);
 }
-
-// button to apear resize e select colors
-function apearBlock(elementId) {
+// button to apear select colors
+function appearBlock(elementId) {
   let element = document.getElementById(elementId)
   if (element.style.display === "none") {
     element.style.display = "flex";
@@ -61,7 +60,6 @@ function apearBlock(elementId) {
     element.style.display = "none";
   }
 }
-
 // remove and add class selected
 const divButtons = document.getElementById('buttons');
 divButtons.addEventListener('click', (e) => {
@@ -87,8 +85,8 @@ clearBoard.addEventListener('click', () => {
 // Pixel and Board Size
 const boardSize = document.getElementById('board-size');
 const pixelSize = document.getElementById('pixel-size');
-boardSize.value = 20;
-pixelSize.value = 20;
+boardSize.value = 30;
+pixelSize.value = 12;
 
 function adjustBoard() {
   let pixel = pixelSize.value + 'px';

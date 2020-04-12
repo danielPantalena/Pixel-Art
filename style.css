@@ -5,21 +5,38 @@ body, div {
 
 header {
   display: flex;
-  background-color: tomato;
+  background-color: rgb(138, 5, 190);
+  color: white;
   padding: 10px 40px;
   justify-content: space-between;
   align-items: center;
   height: 50px;
 }
 
+h1 {
+  margin-right: 40% ;
+}
+
 .settings {
-  position: absolute;
-  float: right;
-  right: 5%;
-  padding: 20px;
-  background-color: yellowgreen;
-  justify-content: space-around;
-  align-items: center;
+  border: 4px groove white;
+  box-shadow: 1px 14px 93px 2px rgba(0, 0, 0, 0.41);
+  background-color: rgb(138, 5, 190);
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.color-input {
+  background-color: white;
+  margin: 5px;
+  padding: 0;
+}
+
+form > input, label {
+  margin: 5px;
+  padding: 5px;
+  width: 40px;
+  border: 0;
+  cursor: pointer;
 }
 
 #buttons {
@@ -33,13 +50,13 @@ header {
   width: 20px;
   border: 1px solid rgba(0, 0, 0, 0.308);
   border-radius: 10%;
+  cursor: pointer;
 }
 
 .selected {
   height: 25px;
-  width: 22px;
-  border: 3px groove white;
-  height: 1.6em;
+  width: 25px;
+  border: 3px groove lime;
 }
 
 .pixel-board {
@@ -48,20 +65,9 @@ header {
   box-shadow: 1px 14px 93px 2px rgba(0, 0, 0, 0.41);
 }
 
-input {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  cursor: pointer;
-  background-color: aliceblue;
-}
-
-
 .pixel {
   background: white;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   float: left;
   text-align: center;
 }
-
-
