@@ -6,19 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paleta de Cores</title>
   <link rel="stylesheet" href="style.css">
-  
+
 </head>
 
 <body>
-  <h1 id="title">Paleta de Cores</h1>
-
-  <div id="color-inputs">
+  <header>
+    <h1 id="title">Pixel Art</h1>
+    <div>
+      <button onclick="apearBlock('size-inputs')">Resize the board</button>
+      <button onclick="apearBlock('color-inputs')">Select your colors</button>
+    </div>
+  </header>
+  <div class='settings' id='size-inputs' style="display: none;">
+    <form>
+      <label for="pixel-size">Select a size for pixels:</label>
+      <input type="number" id="pixel-size" min="10" max="40" placeholder="pixel size">
+      <label for="board-size">Select a size for board:</label>
+      <input type="number" id="board-size" min="5" max="100" placeholder="board size">
+    </form>
+  </div>
+  <div id="color-inputs" class="settings" style="display: none;">
     <input type="color" class="color-input" id="input1">
     <input type="color" class="color-input" id="input2">
     <input type="color" class="color-input" id="input3">
     <input type="color" class="color-input" id="input4">
     <input type="color" class="color-input" id="input5">
     <input type="color" class="color-input" id="input6">
+    <input type="color" class="color-input" id="input7">
+    <input type="color" class="color-input" id="input8">
+    <input type="color" class="color-input" id="input9">
+    <input type="color" class="color-input" id="input10">
+    <input type="color" class="color-input" id="input11">
+    <input type="color" class="color-input" id="input12">
   </div>
 
   <div id="buttons">
@@ -28,42 +47,16 @@
     <button class="button" id="button4"></button>
     <button class="button" id="button5"></button>
     <button class="button" id="button6"></button>
+    <button class="button" id="button7"></button>
+    <button class="button" id="button8"></button>
+    <button class="button" id="button9"></button>
+    <button class="button" id="button10"></button>
+    <button class="button" id="button11"></button>
+    <button class="button" id="button12"></button>
   </div>
 
-  <form>
-    <label for="pixel-size"></label>
-    <input type="number" id="pixel-size" max="40" min="10" placeholder="pixel size">
-    <label for="board-size"></label>
-    <input type="number" id="board-size" max="100" min="5" placeholder="board size">
-  </form>
 
-  <div id="pixel-board" class="pixel-board">
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-  </div>
+  <div id="pixel-board" class="pixel-board"></div>
 
   <button id="clear-board">clear</button>
 
