@@ -18,6 +18,8 @@ h1 {
 }
 
 .settings {
+  width: 40%;
+  margin: 0 auto;
   border: 4px groove white;
   box-shadow: 1px 14px 93px 2px rgba(0, 0, 0, 0.41);
   background-color: rgb(138, 5, 190);
@@ -42,6 +44,7 @@ form > input, label {
 #buttons {
   display: flex;
   justify-content: center;
+  margin-bottom: 12px;
 }
 
 .button {
@@ -61,7 +64,8 @@ form > input, label {
 
 .pixel-board {
   margin: auto;
-  background: rgba(0, 0, 0, 0.01);
+  background: rgba(0, 0, 0, 0.1);
+  border: 3px solid rgba(0, 0, 0, 0.1);
   box-shadow: 1px 14px 93px 2px rgba(0, 0, 0, 0.41);
 }
 
