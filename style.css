@@ -61,7 +61,7 @@ form > input, label {
 
 .pixel-board {
   margin: auto;
-  background: rgba(255, 255, 255, 0.01);
+  background: rgba(0, 0, 0, 0.01);
   box-shadow: 1px 14px 93px 2px rgba(0, 0, 0, 0.41);
 }
 
