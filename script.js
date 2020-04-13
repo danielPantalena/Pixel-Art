@@ -71,8 +71,10 @@ divButtons.addEventListener('click', (e) => {
 // paint the pixel board with the color that have the selected class
 const pixelBoard = document.getElementById('pixel-board');
 pixelBoard.addEventListener('click', (event) => {
-  const selectedColor = document.querySelector('.selected');
-  event.target.style.backgroundColor = selectedColor.style.backgroundColor;
+  if (event.target !== pixelBoard) {
+    const selectedColor = document.querySelector('.selected');
+    event.target.style.backgroundColor = selectedColor.style.backgroundColor;
+  }
 });
 // clear the board
 const clearBoard = document.getElementById('clear-board');
