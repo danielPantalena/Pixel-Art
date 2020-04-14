@@ -20,7 +20,8 @@ h1 {
 .settings {
   width: 40%;
   margin: 0 auto;
-  border: 4px groove white;
+  border: 2px groove white;
+  border-radius: 2%;
   box-shadow: 1px 14px 93px 2px rgba(0, 0, 0, 0.41);
   background-color: rgb(138, 5, 190);
   margin-top: 10px;
@@ -31,6 +32,7 @@ h1 {
   background-color: white;
   margin: 5px;
   padding: 0;
+  border-radius: 10%;
 }
 
 form > input, label {
